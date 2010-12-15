@@ -1,0 +1,31 @@
+Copyright (C) 2009-2010 Fellicht <http://www.fellicht.nl/>
+
+	Naxasius is free software; you can redistribute it and/or modify it under the	terms of Creative Commons 3.0 <http://creativecommons.org/licenses/by/3.0/>.
+	The software is build on the CakePHP Framework <http://cakephp.org> wich is licensed under The MIT License <http://www.opensource.org/licenses/mit-license.php>.
+
+	The above copyright notice shall be included in all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+	DEALINGS IN THE SOFTWARE.
+
+Any comment is welcome.
+
+		- Mathieu <mathieu@fellicht.nl>
+
+Naxasius <http://www.naxasius.com/> is a CakePHP powered Game Engine for making browser MMORPGs.
+This is including a playable interface and has many features:
+* Maps (complete customable with Tiles and Obstacles);
+* NPCs (and interaction with them);
+* Monsters;
+* Items and Weapons (in different qualities: from Poor to Legendary);
+* Stats (like Health, Mana, Damage and more);
+* Quests;
+* Converstaions (in Fallout 3 style for gaining or losing Karma and other Stats);
+* Character customization (equiping Weapons and Items, Talents Tree and Stats);
+* Classes like Warrior, Priest, Magier and Assassin;
+* And much more!
