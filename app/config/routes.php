@@ -26,8 +26,17 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/views/pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	Router::connect('/', array('controller' => 'news', 'action' => 'index'));
+
+	// Connect /game/ to an controller/function
+	Router::connect('/game', array('controller' => 'pages', 'action' => 'game'));
+	Router::connect('/forum', array('controller' => 'forums', 'plugin' => 'forum'));
+	Router::connect('/forum/view/*', array('controller' => 'topics', 'plugin' => 'forum', 'action' => 'index'));
+	Router::connect('/forum/topics/view/*', array('controller' => 'replies', 'plugin' => 'forum', 'action' => 'index'));
+	Router::connect('/admin', array('controller' => 'maps', 'action' => 'index', 'admin' => true));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	#Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+?>
