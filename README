@@ -19,7 +19,7 @@ Any comment is welcome.
 
 		- Mathieu <mathieu@fellicht.nl>
 
-Naxasius <http://www.naxasius.com/> is a CakePHP powered Game Engine for making browser MMORPGs.
+Naxasius <http://www.naxasius.com/> is a CakePHP powered Game Engine to make a browser MMORPG.
 This is including a playable interface and has many features:
 * Maps (complete customable with Tiles and Obstacles);
 * NPCs (and interaction with them);
