@@ -1,0 +1,10 @@
+div.characters_c { width: 400px; margin-bottom: 10px; height: 100px; }
+div.characters_c div.avatar { width: 100px; height: 100px; float: left; z-index: 10; }
+div.characters_c div.info { position: relative; padding: 10px; left: 5px; padding-top: 8px; }
+div.characters_c div.char_name { height: 20px; }
+div.characters_c div.xp_bar { position: absolute; width: 301px; height: 20px; left: 94px; }
+div.characters_c div.xp_bar_process { height: 20px; position: absolute; background-image: url(../img/game/interfaces/general/xpbar-small.png); background-repeat: repeat-x; border-right: 1px solid #2a6709; }
+div.characters_c div.xp_bar div.xp_bar_text { position: absolute; left: 50%; width: 50px; margin-left: -25px; font-size: 10px; font-weight: bold; top: 5px; }
+div.characters_c div.hp_bar { position: absolute; width: 301px; height: 20px; left: 94px; top: 60px; }
+div.characters_c div.hp_bar_process { height: 20px; position: absolute; background-image: url(../img/game/interfaces/general/hpbar-small.png); background-repeat: repeat-x; border-right: 1px solid #2a6709; }
+div.characters_c div.hp_bar div.hp_bar_text { position: absolute; left: 50%; width: 50px; margin-left: -25px; font-size: 10px; font-weight: bold; top: 5px; }

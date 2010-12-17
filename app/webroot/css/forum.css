@@ -1,0 +1,12 @@
+div.forum { margin-bottom: 10px; padding: 10px; }
+h2 a { font-weight: normal; background-color: transparent; padding: 0px; }
+h2 a:hover { background-color: transparent; text-decoration: underline; color: #615333; }
+table.forum_topics th, table.forum_topics td { padding: 10px; }
+table.forum_topics th { font-weight: bold; }
+table.forum_topics td.author { font-size: 11px; }
+table.forum_topics td.replies { font-size: 11px; text-align: right; }
+div.forum_new_topic { text-align: right; padding-bottom: 10px; }
+
+div.replies { padding-top: 5px; }
+div.reply { margin-bottom: 10px; padding: 10px; padding-bottom: 1px; }
+div.numbers { padding-top: 10px; }

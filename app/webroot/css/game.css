@@ -1,0 +1,152 @@
+body { font-size: 12px; color: #000; font-family: Times, serif, sans-serif, Helvetica, Arial, Verdana; background-color: #000; background-image: url(../img/game/interfaces/wood/background.png); }
+h1 { font-size: 22px; font-weight: normal; margin-bottom: 5px; }
+h2 { font-size: 18px; font-weight: normal; margin-bottom: 5px; }
+p { line-height: 16px; margin-bottom: 10px; }
+em { font-style: italic; }
+div#x { display: none; z-index: -1; }
+
+/* Layout containers */
+div.c { width: 1024px; height: 600px; position: relative; left: 50%; margin-left: -512px; }
+div.statusbar_c { position: absolute; top: 10px; height: 32px; width: 730px; left: 50%; margin-left: -365px; z-index: 1; }
+div.xp_bar_c { position: relative; width: 730px; height: 32px; overflow: hidden; }
+div.xp_bar { position: absolute; z-index: 1; background-image: url(../img/game/interfaces/general/xpbar.png); background-repeat: repeat-x; height: 32px; width: 0%; border-right: 1px solid #2a6709; }
+div.ding_bar { position: absolute; z-index: 3; background-image: url(../img/game/interfaces/general/levelupbar.png); background-repeat: no-repeat; height: 32px; width: 0%; border-right: 1px solid #cccccc; }
+div.xp_amount { position: absolute; width: 100px; text-align: center; left: 50%; margin-left: -50px; font-weight: bold; color: #000; z-index: 2; top: 9px; }
+img.area_object { width: 32px; height: 32px; }
+.clearBoth { clear: both; }
+
+div.icon { width: 32px; height: 32px; }
+div.items { height: 32px; }
+div.items div.item { float: left; margin-right: 10px; margin-bottom: 10px; }
+
+/* Character info */
+div.user_c { position: absolute; left: 10px; top: 10px; height: 130px; width: 330px; }
+div.user_c img.f { position: absolute; z-index: 10; left: 0px; top: 0px; }
+div.avatar_c { width: 123px; height: 123px; }
+div.characterinfo_c { position: absolute; left: 122px; top: 45px; height: 78px; width: 208px; }
+div.charactername { position: relative; top: 10px; left: 10px; }
+div.hp_bar_c { width: 208px; position: relative; top: 20px; height: 16px; }
+div.hp_bar_c div.hp_bar { position: absolute; height: 16px; width: 0%; background-image: url(../img/game/interfaces/general/hpbar-small-game.png); border-right: 1px solid #9a3228; }
+div.hp_bar_c div.hp_amount { position: absolute; width: 100px; top: 2px; left: 50%; margin-left: -50px; color: #000; font-weight: bold; font-size: 11px; text-align: center;}
+
+/* Minimap */
+div.worldmap_c { position: absolute; right: 10px; top: 10px; height: 130px; width: 330px; }
+div.minimap_c { position: absolute; right: 0px; top: 0px; height: 123px; width: 123px; }
+div.minimapinfo_c { padding: 10px; line-height: 18px; position: absolute; right: 122px; top: 45px; height: 58px; width: 188px; }
+
+span.map_title { font-weight: bold; }
+span.map_desc { color: #444; }
+.battletype_pve { color: #36a021; }
+
+div.message_c { position: absolute; width: 310px; height: 24px; left: 351px; top: 50px; padding-top: 10px; padding-left: 10px; display: none; }
+div.map_c { position: absolute; width: 320px; height: 160px; left: 351px; top: 92px;}
+div.menu_c { position: absolute; width: 330px; height: 34px; left: 10px; top: 148px; }
+div.menu_c div.menu_item { float: left; }
+div.menu_c div.menu_item img { width: 32px; height: 32px; }
+div.karma_c { position: absolute; width: 330px; height: 34px; right: 10px; top: 148px; }
+div.karma_bar { position: absolute; z-index: 1; background-image: url(../img/game/interfaces/general/karmabar.png); background-repeat: repeat-x; height: 32px; width: 0%; border-right: 1px solid #472b00; }
+div.karma_amount { position: absolute; width: 100px; text-align: center; left: 50%; margin-left: -50px; font-weight: bold; color: #000; z-index: 2; top: 11px; }
+div.actions_c { position: absolute; width: 320px; left: 351px; top: 260px; }
+div.action { width: 32px; height: 32px; float: left; }
+div.actionsdetail_c { display: none; position: absolute; left: 350px; top: 300px; width: 320px; height: 32px; }
+div#popup { position: absolute; z-index: 200; display: none; top: 100px; width: 450px; left: 50%; margin-left: -225px; }
+div.popup_title { position: absolute; left: 42px; top: 10px; font-size: 18px; font-weight: bold; }
+div.popup_c { padding: 10px; padding-top: 42px; }
+div.popup_c div.image_right { float: right; margin: 10px; width: 100px; height: 100px; margin-right: 0px; }
+div.popup_c div.image_left { float: left; margin: 10px; width: 100px; height: 100px; margin-left: 0px; }
+div#popup_container { background-image: url(../img/game/interfaces/general/black_50.png); position: absolute; z-index: 199; left: 0px; top: 0px; display: none; }
+div#mouseInfo { z-index: 201; position: absolute; left: 10px; top: 10px; width: 250px; display: none; }
+/* Chat */
+div.chat_c { position: absolute; left: 0px; bottom: 0px; /* top: 415px; */width: 512px; height: 175px; }
+div#chat { padding: 10px;  overflow-y: scroll; height: 120px; }
+div.talk_c { position: relative; bottom: 0px; height: 35px; }
+div.talk_character { position: absolute; height: 15px; padding: 10px; width: 75px; font-weight: bold; }
+div.chat_input { position: absolute; height: 15px; padding: 10px; width: 397px; left: 95px; }
+input#chat { position: absolute; top: 0px; left: 0px; padding: 10px; height: 15px; border: 0px; width: 397px; background-color: transparent; color: #000000; font-weight: normal; font-style: italic; }
+p.chat { margin-bottom: 5px; }
+p.chat_private { color: #ff4800; }
+/* Popup tabs */
+div.tab_c { position: absolute; height: 25px; top: -21px; left: 5px; }
+div.tab_c div.tab, div.tab_c div.tab_chat { cursor: pointer; float: left; color: #a38243; height: 16px; padding-top: 6px; padding-left: 10px; padding-right: 10px; }
+div.tab_c div.selected { color: #222222; }
+
+/* Default item */
+div.item, div.quest_item { width: 32px; height: 32px; position: relative; }
+div.item span.amount, div.quest_item span.amount { position: absolute; right: 4px; z-index: 5; font-weight: bold; font-family: Arial, Verdana; bottom: 4px; text-shadow: 1px 1px 0px #fff; }
+
+/* items */
+div.item_c { padding: 10px; position: relative; }
+div.item_c div.item { position: absolute; left: -42px; top: 0px; }
+div.item_c div.item_type { float: right; }
+span.item_trash { cursor: default; color: #bbb; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+span.item_normal { cursor: default; color: #fff; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+span.item_good { cursor: default; color: #58a547; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+span.item_rare { cursor: default; color: #2252c0; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+span.item_epic { cursor: default; color: #ff0000; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+span.item_legendary { cursor: default; color: #ffa200; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+div.item_desc { font-style: italic; font-size: 10px; color: #9c8d0e; }
+div.item_lootedby { font-size: 10px; color: #222222; font-style: italic; }
+
+span.quest { cursor: default; color: #fff; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 1px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px;white-space:nowrap; }
+
+/* Game map */
+div.map { overflow: hidden; }
+table.mapcontrainer td { vertical-align: middle; text-align: center; }
+div.area { position: relative; width: 32px; height: 32px; background-repeat: no-repeat; float: left; }
+/* Arrows */
+div#map img { position: absolute; z-index: 98; cursor: pointer; }
+div#map img.top { left: 50%; margin-left: -16px; top: 0px; }
+div#map img.bottom { left: 50%; margin-left: -16px; bottom: 0px; }
+div#map img.left { top: 50%; margin-top: -16px; left: 0px; }
+div#map img.right { top: 50%; margin-top: -16px; right: 0px; }
+/* Actions */
+div.action { width: 32px; height: 32px; margin-right:5px; cursor: pointer; }
+div.actionsdetail_c span.error { padding-left: 10px; position: relative; top: 5px; color: red; font-weight: bold; }
+div.actionsdetail_c span.error img { position: relative; top: 3px; }
+
+/* bags */
+div.bags_c { position: absolute; right: 0px; bottom: 0px; }
+div.bags { }
+div.inventory_c { height: 42px; }
+div.bag, div.inventory { width: 32px; height: 32px; float: right; margin-left: 10px; margin-bottom: 10px;  }
+/* Conversation popup (npc) */
+div.npc_c { position: relative; top: 42px;  }
+div.npc_c div.npc_text { padding-right: 10px; padding-left: 10px; padding-bottom: 10px; }
+div.conversations_c { padding: 10px; padding-top: 16px;  }
+div.conversations_c div.noOption { color: #555555; margin-bottom: 8px; }
+div.conversations_c div.option { cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #e0bc6c; color: #472b00; text-decoration: none; font-weight: bold; padding: 10px; padding-left: 5px; padding-right: 5px; margin-bottom: 8px; }
+div.conversations_c div.option:hover { color: #e0bc6c; background-color: #472b00; }
+div.conversation_character_c { position: relative; height: 84px; padding-bottom: 45px; }
+div.conversation_character_c div.character { position: absolute; right: 10px; top: 10px; height: 64px; width: 64px; }
+
+/* Quests */
+div.quests { height: 100px; overflow-y: scroll;}
+div.quests div.noQuest { color: #e0bc6c; text-align: center; padding-top: 40px; font-size: 16px; }
+div.quests div.quest { margin-right: 2px; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #e0bc6c; color: #472b00; text-decoration: none; font-weight: bold; padding: 5px; margin-bottom: 3px; }
+div.quests div.quest:hover { color: #e0bc6c; background-color: #472b00; }
+div#quest_detail_c {margin-top: 10px; padding: 5px; margin-bottom: 3px;}
+div#quest_detail { height: 250px; overflow-y: scroll; }
+/* Items */
+div.action_icon { width: 32px; height: 32px; float: left; }
+div.action_detail { height: 25px; position: absolute; padding-left: 10px; left: 30px; padding-top: 7px; }
+div.action_detail span.title { font-weight: normal; font-size: 18px; }
+div.action_actions { height: 32px; float:right; width: 32px; margin: 0px; padding: 0px;}
+div.action_actions img { cursor: pointer;  }
+
+/* Battle log */
+div.battleLog { height: 145px; }
+div.battleLog div.message { margin: 5px; font-size: 12px; font-weight: bold; }
+div.battleLog div.you { background-color: #45961B; border: 1px solid #3A8015; padding: 2px; }
+div.battleLog div.mob { background-color: #B60404; border: 1px solid #9A0A0A; padding: 2px; }
+div.damage_info { display: none; color: #fff; text-align: center; line-height: 80px; position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; margin-left: -40px; margin-top: -40px; font-size: 48px; font-weight: bold; background-color: rgba(0,0,0,0.7); -moz-border-radius: 80px; -webkit-border-radius: 80px;white-space:nowrap; }
+
+/* Character sheet */
+div.charactersheet div.item { margin-bottom: 10px; }
+div.charactersheet div.left { float: left; width: 32px; }
+div.charactersheet div.center { float: left; width: 150px; text-align: center; }
+div.charactersheet div.center div.item { left: 37px; top: 6px; }
+div.charactersheet div.center div.off_hand { left: 81px; top: -36px; }
+div.charactersheet div.right { float: left; width: 50px; }
+div.charactersheet div.stats { float: left; width: 150px; }
+div.stats div.stat { border-bottom: 1px dotted #6B4000; padding-bottom: 3px; padding-top: 2px; }
+div.stats div.stat span.value { float: right; font-weight: bold; }
