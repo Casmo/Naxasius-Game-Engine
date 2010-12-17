@@ -2,8 +2,8 @@ Copyright (C) 2009-2010 Fellicht <http://www.fellicht.nl/>
 
 	Naxasius is free software; you can redistribute it and/or modify it under the
 	terms of Creative Commons 3.0 <http://creativecommons.org/licenses/by/3.0/>.
-	The software is build on the CakePHP Framework <http://cakephp.org> wich is 
-	licensed under The MIT License <http://www.opensource.org/licenses/mit-license.php>.
+	The software is build on the CakePHP Framework <http://cakephp.org> wich can be
+	used under The MIT License <http://www.opensource.org/licenses/mit-license.php>.
 
 	The above copyright notice shall be included in all copies or substantial portions of the Software.
 
@@ -15,7 +15,14 @@ Copyright (C) 2009-2010 Fellicht <http://www.fellicht.nl/>
 	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 	DEALINGS IN THE SOFTWARE.
 
-Any comment is welcome.
+It's my first (real and) big CakePHP project in combination with Git. I've worked over 3 years to release
+a game like this but had many fall backs and fresh starts. In end 2010 I decided to make it Opensource
+because I needed more time for my own business and have many other side projects where I'm working on.
+Some of the content maybe from other people/companies. Please take a look at my special thank page for
+the credits <http://www.naxasius.com/pages/view/4>.
+
+Any comment is welcome. See the install file for more information and check the Wiki to help you through
+the code.
 
 		- Mathieu <mathieu@fellicht.nl>
 
