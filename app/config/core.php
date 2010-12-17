@@ -85,7 +85,7 @@
  *
  * [Note Routing.admin is deprecated in 1.3.  Use Routing.prefixes instead]
  */
-Configure::write('Routing.prefixes', array('admin', 'game'));
+	//Configure::write('Routing.prefixes', array('admin'));
 
 /**
  * Turn off all caching application-wide.
@@ -201,12 +201,12 @@ Configure::write('Routing.prefixes', array('admin', 'game'));
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'FJKlFD*&(#$LKJKDLf8df9sfhkljJFLK#@)');
+	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '12345654879231140223141251601655762404254622');
+	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
