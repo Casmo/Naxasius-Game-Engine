@@ -44,3 +44,9 @@ I've added the default game settings in /app/config/boostrap.php witch you can e
 Step 6: Create a user
 
 Create a user through the default User Interface and edit this user in your database. Set the `role` to "admin". Now you can login and start making your game!
+
+> Note: Activation code needs to be empty in order to play
+
+## What's next?
+
+Please see the Wiki for more information of creating the game. There are some resources in the /resources/ map witch can be usefull.
