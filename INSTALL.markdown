@@ -2,7 +2,7 @@
 
 Howto install Naxasius with a playable interface.
 
-> Note: It's still in development.
+> Note: It's still in development. And unfortunately, always will be. - Mathieu 2014.
 
 ## Requirements
 
@@ -49,4 +49,14 @@ Create a user through the default User Interface and edit this user in your data
 
 ## What's next?
 
-Please see the Wiki for more information of creating the game. There are some resources in the /resources/ map witch can be usefull.
+Please see the Wiki for more information of creating the game. There are some resources in the /resources/ map witch can be useful.
+
+
+## Troubleshooting
+
+Chmod the following directories to 0755:
+
+* /app/webroot/img/game/npcs/
+* /app/webroot/img/game/mobs/org/
+* /app/webroot/img/games/mobs/32/
+* /app/webroot/img/games/mobs/100/
