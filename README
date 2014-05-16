@@ -38,3 +38,11 @@ This is including a playable interface and has many features:
 * Character customization (equiping Weapons and Items, Talents Tree and Stats);
 * Classes like Warrior, Priest, Magier and Assassin;
 * And much more!
+
+## Troubleshooting ##
+
+Game engine is running on Cake 1.3 and has known issues with PHP 5 and above. Use the Cakephp2.x branch when you use a higher PHP version. Please note that this branch is not stable.
+
+*TODO*
+
+* Replacing the localization function from __('var', true) to __('var') and __('var', true) to echo __('var')
