@@ -806,7 +806,7 @@ CREATE TABLE IF NOT EXISTS `types` (
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(80) NOT NULL,
   `email` varchar(75) NOT NULL,
   `activation_code` varchar(25) NOT NULL,
   `created` datetime NOT NULL,
